@@ -3,30 +3,107 @@
     <head>
         <meta charset="UTF-8">
         <title> Homepage </title>
+        <style>
+
+            .header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: #3B6433;
+                padding: 10px;
+            }
+    
+            .menu {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+    
+            .menu li {
+                display: inline;
+                margin-left: 10px;
+                border: 1px solid #DDC4A6;
+                background-color: #E8D3B5;
+                padding: 5px 10px;
+            }
+    
+            .menu li a {
+                color: #391400;
+                text-decoration: none;
+            }
+        </style>
     </head>
+    <body>
+        <div class="header">
+            <div>
+                <h1>My CSTU Passport</h1>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Homepage</a></li>
+                    <li><a href="#">-------</a></li>
+                    <li><a href="#">-------</a></li>
+                </ul>
+            </nav>
+        </div>
+        <hr>
     <body style="background-color: #F6F1EC;">
-        <h1 style="color: #3B6433;"> About Me</h1>
-        <img src="mypic.png" width="200px" height="300px">
+        <style>
+            .text {
+                color: #391400; 
+                text-decoration: none;
+            }
+            h2{
+                color: #3B6433;
+            }
+            .container {
+                display: flex;
+                align-items: center;
+            }
+            .image {
+                position: relative;
+                left: 50px; 
+                top: 30px;
+                margin-right: 95px;
+            }
+            .video {
+                position: relative;
+                left: 10px;
+                top: 30px;
+                margin-right: 20px;
+            }
+        </style>
+        <div class="container">
+            <div class="image">
+                <img src="mypic.png" height="300px">
+            </div>
+            <div>
+                <article>
+                    <h2>About Me</h2>
+                    <p>ชื่อ : พิรญาณ์ เอนอ่อน</p>
+                    <p>ชื่อเล่น : ครีม</p>
+                    <p>วันเกิด : 8 เมษายน 2548</p>
+                </article>
+                <aside>
+                    <h2> fav song </h2>
+                        <a href="https://www.youtube.com/watch?v=e9I-IG9PmQk" class="text"> Blackbeans - Pink [Official Audio] </a>
+                </aside>
+            </div>
+        </div>
         <br><br>
-        <article style="background-color: #FCFDFF; width: 250px; padding: 10px; border: 2px solid #3B6433; margin: 10px; border-radius: 5px;">
-            <h2 style="color: #3B6433;"> Hello!! </h2>
-            <ul>
-                <li style="color: #391400;"> ชื่อ : พิรญาณ์ เอนอ่อน </li>
-                <li style="color: #391400;"> ชื่อเล่น : ครีม</li>
-                <li style="color: #391400;">วันเกิด : 8 เมษายน 2548</li>
-            </ul>
-        </article>
-        <aside style="background-color: #FCFDFF; width: 250px; padding: 10px; border: 2px solid #3B6433; margin: 10px; border-radius: 5px;">
-            <h2 style="color: #3B6433;"> fav song </h2>
-                <p style="color: #391400;"> Blackbeans - Pink </p>
-        </aside>
-        <footer style="background-color: #FCFDFF; width: 250px; padding: 10px; border: 2px solid #3B6433; margin: 10px; border-radius: 5px;">
-            <h2 style="color: #3B6433;">ข้อมูลติดต่อ</h2>
-            <p style="color: #391400;">Email : piraya.en-@dome.tu.ac.th </p>
-            <p style="color: #391400;">Tel : 084-1364178 </p>
-        </footer>
-        <video width="320" height="240" controls>
-            <source src="my vdo.mp4" type="video/mp4">
-        </video>
+        <div class="container">
+            <div class="video">
+                <video  height="300" controls>
+                    <source src="my vdo.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div>
+                <footer>
+                    <h2> ข้อมูลติดต่อ </h2>
+                    <p> Email : piraya.en-@dome.tu.ac.th </p>
+                    <p>Tel : 084-1364178 </p>
+                </footer>
+            </div>
+        </div>
     </body>
 </html>
