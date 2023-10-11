@@ -1,109 +1,51 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title> Homepage </title>
-        <style>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Homepage</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
 
-            .header {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                color: #3B6433;
-                padding: 10px;
-            }
-    
-            .menu {
-                list-style-type: none;
-                padding: 0;
-                margin: 0;
-            }
-    
-            .menu li {
-                display: inline;
-                margin-left: 10px;
-                border: 1px solid #DDC4A6;
-                background-color: #E8D3B5;
-                padding: 5px 10px;
-            }
-    
-            .menu li a {
-                color: #391400;
-                text-decoration: none;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="header">
-            <div>
-                <h1>My CSTU Passport</h1>
-            </div>
-            <nav>
-                <ul class="menu">
-                    <li><a href="#">Homepage</a></li>
-                    <li><a href="#">-------</a></li>
-                    <li><a href="#">-------</a></li>
-                </ul>
-            </nav>
-        </div>
-        <hr>
-    <body style="background-color: #F6F1EC;">
-        <style>
-            .text {
-                color: #391400; 
-                text-decoration: none;
-            }
-            h2{
-                color: #3B6433;
-            }
-            .container {
-                display: flex;
-                align-items: center;
-            }
-            .image {
-                position: relative;
-                left: 50px; 
-                top: 30px;
-                margin-right: 95px;
-            }
-            .video {
-                position: relative;
-                left: 10px;
-                top: 30px;
-                margin-right: 20px;
-            }
-        </style>
-        <div class="container">
-            <div class="image">
-                <img src="image/mypic.png" height="300px">
-            </div>
-            <div>
-                <article>
-                    <h2>About Me</h2>
-                    <p>ชื่อ : พิรญาณ์ เอนอ่อน</p>
-                    <p>ชื่อเล่น : ครีม</p>
-                    <p>วันเกิด : 8 เมษายน 2548</p>
-                </article>
-                <aside>
-                    <h2> fav song </h2>
-                        <a href="https://www.youtube.com/watch?v=e9I-IG9PmQk" class="text"> Blackbeans - Pink [Official Audio] </a>
-                </aside>
-            </div>
-        </div>
-        <br><br>
-        <div class="container">
-            <div class="video">
-                <video  height="300" controls>
-                    <source src="VDO/my_vdo.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div>
-                <footer>
-                    <h2> ข้อมูลติดต่อ </h2>
-                    <p> Email : piraya.en-@dome.tu.ac.th </p>
-                    <p>Tel : 084-1364178 </p>
-                </footer>
-            </div>
-        </div>
-    </body>
+<div class="header">
+  <h1>My CSTU Passport</h1>
+</div>
+
+<div class="row">
+  <div class="col-3 menu">
+    <ul>
+      <li><a href="#">Homepage</a></li>
+      <li><a href="html/myAdvisor.html">Advisor</a></li>
+      <li><a href="html/myActivities.html">Activity</a></li>
+      <li><a href="#">More</a></li>
+    </ul>
+  </div>
+
+  <div class="col-6">
+    <h1>About Me</h1>
+    <img src="image/mypic.png" height="300px">
+    <p>ชื่อ : พิรญาณ์ เอนอ่อน</p>
+    <p>ชื่อเล่น : ครีม</p>
+    <p>วันเกิด : 8 เมษายน 2548</p>
+    <a href="https://www.youtube.com/watch?v=e9I-IG9PmQk" class="col-6 song">เพลงที่ชอบ : Blackbeans - Pink [Official Audio]</a>
+  </div>
+
+  <div class="col-3 right">
+    <div class="aside">
+      <h2>What?</h2>
+      <p>Chania is a city on the island of Crete.</p>
+      <h2>Where?</h2>
+      <p>Crete is a Greek island in the Mediterranean Sea.</p>
+      <h2>How?</h2>
+      <p>You can reach Chania airport from all over Europe.</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>&copy; 2023 Piraya En-on</p>
+</div>
+
+</body>
 </html>
